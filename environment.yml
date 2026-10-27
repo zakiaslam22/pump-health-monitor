@@ -1,0 +1,10 @@
+name: pump
+channels:
+  - conda-forge
+dependencies:
+  - python=3.12
+  - pandas
+  - sqlalchemy
+  - psycopg
+  - streamlit
+  - pytest
