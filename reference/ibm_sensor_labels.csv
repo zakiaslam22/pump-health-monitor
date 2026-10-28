@@ -1,0 +1,52 @@
+sensor_column,description,tag_code
+sensor_00,Motor Casing Vibration,VIB
+sensor_01,Motor Frequency A,FREQ
+sensor_02,Motor Frequency B,FREQ
+sensor_03,Motor Frequency C,FREQ
+sensor_04,Motor Speed,SPD
+sensor_05,Motor Current,CURR
+sensor_06,Motor Active Power,PWR
+sensor_07,Motor Apparent Power,PWR
+sensor_08,Motor Reactive Power,PWR
+sensor_09,Motor Shaft Power,PWR
+sensor_10,Motor Phase Current A,CURR
+sensor_11,Motor Phase Current B,CURR
+sensor_12,Motor Phase Current C,CURR
+sensor_13,Motor Coupling Vibration,VIB
+sensor_14,Motor Phase Voltage AB,VOLT
+sensor_16,Motor Phase Voltage BC,VOLT
+sensor_17,Motor Phase Voltage CA,VOLT
+sensor_18,Pump Casing Vibration,VIB
+sensor_19,Pump Stage 1 Impeller Speed,SPD
+sensor_20,Pump Stage 1 Impeller Speed,SPD
+sensor_21,Pump Stage 1 Impeller Speed,SPD
+sensor_22,Pump Stage 1 Impeller Speed,SPD
+sensor_23,Pump Stage 1 Impeller Speed,SPD
+sensor_24,Pump Stage 1 Impeller Speed,SPD
+sensor_25,Pump Stage 2 Impeller Speed,SPD
+sensor_26,Pump Stage 2 Impeller Speed,SPD
+sensor_27,Pump Stage 2 Impeller Speed,SPD
+sensor_28,Pump Stage 2 Impeller Speed,SPD
+sensor_29,Pump Stage 2 Impeller Speed,SPD
+sensor_30,Pump Stage 2 Impeller Speed,SPD
+sensor_31,Pump Stage 2 Impeller Speed,SPD
+sensor_32,Pump Stage 2 Impeller Speed,SPD
+sensor_33,Pump Stage 2 Impeller Speed,SPD
+sensor_34,Pump Inlet Flow,FLOW
+sensor_35,Pump Discharge Flow,FLOW
+sensor_36,Pump Unknown,UNK
+sensor_37,Pump Lube Oil Overhead Reservoir Level,LVL
+sensor_38,Pump Lube Oil Return Temp,TEMP
+sensor_39,Pump Lube Oil Supply Temp,TEMP
+sensor_40,Pump Thrust Bearing Active Temp,TEMP
+sensor_41,Motor Non Drive End Radial Bearing Temp 1,TEMP
+sensor_42,Motor Non Drive End Radial Bearing Temp 2,TEMP
+sensor_43,Pump Thrust Bearing Inactive Temp,TEMP
+sensor_44,Pump Drive End Radial Bearing Temp 1,TEMP
+sensor_45,Pump Non Drive End Radial Bearing Temp 1,TEMP
+sensor_46,Pump Non Drive End Radial Bearing Temp 2,TEMP
+sensor_47,Pump Drive End Radial Bearing Temp 2,TEMP
+sensor_48,Pump Inlet Pressure,PRESS
+sensor_49,Pump Temp Unknown,TEMP
+sensor_50,Pump Discharge Pressure 1,PRESS
+sensor_51,Pump Discharge Pressure 2,PRESS
