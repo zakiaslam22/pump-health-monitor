@@ -36,5 +36,5 @@ if __name__ == "__main__":
     print(tags.shape)
 
     engine = get_engine()
-    tags.to_sql("tags", engine, if_exists="replace", index=False)
+    tags.to_sql("tags", con=engine, if_exists="replace", index=False)
     print("Saved tags table to PostgreSQL.")
