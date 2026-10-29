@@ -78,7 +78,16 @@ Defining these as SQL views means the logic lives in one place, and any tool tha
 Three tabs:
 
 1. **Runtime & downtime:** key findings, headline metrics (uptime, failures, downtime, MTBF), a 5-month motor speed timeline with each outage shaded in red, a sensor explorer that zooms into any failure (48 hours before to 24 hours after), and a table of all failures.
+
+![Runtime tab, headline metrics and timeline](images/runtime1.png)
+![Runtime tab, failure zoom and table](images/runtime2.png)
+
 2. **Data quality:** missing data by sensor, the flagged sensors, and the collection outages where many sensors went blank at once.
+
+![Data quality tab, missing data by sensor](images/data1.png)
+![Data quality tab, flagged sensors and collection outages](images/data2.png)
+
+
 3. **Honest results:** what I found, the limitations, what real plant data would add, and next steps.
 
 ## Project structure
