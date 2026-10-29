@@ -9,3 +9,4 @@ dependencies:
   - streamlit
   - pytest
   - ipykernel
+  - plotly
