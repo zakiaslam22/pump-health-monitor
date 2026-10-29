@@ -26,12 +26,12 @@ def engine():
 def query(sql):
     return pd.read_sql(sql, engine())
 
-
+#only loaded once in the beginning and then saved so it doesnt need to repeatedly fetcht he data over again (caching)
 @st.cache_data
 def raw_data():
     return load_raw()
 
-
+# vrect is a method in plotly that draws a rectange over a specified period of time
 def shade_outages(fig, events, label=True):
     """Shade each outage period in red on a Plotly time chart."""
     for _, e in events.iterrows():
@@ -72,7 +72,7 @@ with tab_runtime:
     events = query("SELECT * FROM events ORDER BY event_id")
     gaps = query("SELECT event_id, hours_since_last_failure FROM time_between_failures")
 
-    # Key findings box
+    # Key findings box (the st.info creates the blue box)
     longest = events.loc[events["duration_hours"].idxmax()]
     st.info(
         f"**Key findings:** the pump ran normally **{summary['uptime_pct']}%** of the time, with "
@@ -89,7 +89,7 @@ with tab_runtime:
     c3.metric("Total downtime", f"{summary['total_downtime_hours']} h")
     c4.metric("MTBF", f"{mtbf['mtbf_days']} days")
 
-    # Timeline of all 5 months
+    # Timeline of all 5 months Using the motor speed sensor as it clearly shows the diff between the outages and when it's working. 
     st.subheader("Five months at a glance")
     df = raw_data()
     hourly = df.set_index("timestamp")["sensor_04"].resample("1h").mean()
